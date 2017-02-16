@@ -13,7 +13,7 @@ struct Enemy {
 				
 };
 
-void CreateRandomEnemy(string names[],Enemy enemies[]) {
+void CreateRandomEnemy(string names[],Enemy enemies[], int &e) {
 
 
 
@@ -34,6 +34,7 @@ int main() {
 	srand(time(NULL));
 	string names[10] = {"David","Marta","Dani","Alex","Maria","Ramon","Alessandro","Sara","Angel","Oscar"};
 	Enemy enemies[5];
+	int EnemiesCreated = 0; 
 	CreateRandomEnemy(names,enemies);
 
 
