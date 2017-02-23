@@ -56,7 +56,7 @@ public:
 	}
 
 	bool isAlive() {
-
+		return life > 0; 
 
 	}
 	
@@ -106,6 +106,7 @@ int main() {
 
 	srand(time(nullptr));
 	Player player;
+	Zombie zombie;
 	const int NUMZOMBIES = 10;
 	Zombie arr[NUMZOMBIES];
 	bool zombiesAreAlive = true; 
@@ -113,7 +114,11 @@ int main() {
 	do {
 		for (int i = 0; i < NUMZOMBIES; i++)
 		{
+			if (arr[i].isAlive())
+			{
+				player.attack
 
+			}
 		}
 
 
