@@ -96,17 +96,7 @@ public:
 
 	bool isAlive() {
 
-		if (life > 0)
-		{
-			return life;
-		}
-		else
-		{
-			return 0;
-		}
-
-	}
-
+		return life > 0;
 
 };
 
@@ -114,8 +104,20 @@ public:
 
 int main() {
 
+	srand(time(nullptr));
+	Player player;
+	const int NUMZOMBIES = 10;
+	Zombie arr[NUMZOMBIES];
+	bool zombiesAreAlive = true; 
+
+	do {
+		for (int i = 0; i < NUMZOMBIES; i++)
+		{
+
+		}
 
 
+	} while (player.isAlive() && zombie.isAlive());
 
 
 
